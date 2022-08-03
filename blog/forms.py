@@ -1,4 +1,5 @@
-from .models import Comment
+from django_summernote.widgets import SummernoteWidget
+from .models import Comment, Post
 from django import forms
 
 
@@ -6,3 +7,35 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ('title', 'slug', 'author',
+                  'content', 'featured_image',)
+
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control',
+                                     'placeholder': 'Title Placeholder Area'}),
+            'slug': forms.TextInput
+            (attrs={'class': 'form-control',
+                    'placeholder': 'Title tag Placeholder Area'}),
+            'author': forms.TextInput(attrs={'class': 'form-control',
+                                             'value': '', 'id': 'elder',
+                                             'type': 'hidden'}),
+            'content': SummernoteWidget(),
+
+        }
+
+
+class EditForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ('title', 'slug', 'content', 'featured_image',)
+
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control',
+                                     'placeholder': 'Title Placeholder Area'}),
+            'slug': forms.TextInput(attrs={'class': 'form-control'}),
+            'content': SummernoteWidget(),
+        }

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center">
+    <h1>Add Post</h1>
+</div>
+<br/>
+<div class="d-flex justify-content-center">
+    <div class="form-group">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ content|safe }}
+            {{ form.as_p }}
+            <button class="btn btn-signup">Post</button>
+            <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+        </form>
+    </div>
+</div>
+<br>
+<script>
+    var name = "{{ user.id }}";
+    document.getElementById("elder").value = name;
+</script>
+
+{% endblock %}

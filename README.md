@@ -9,11 +9,13 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 # Table of contents
   * [Users stories](#users-stories)
+  * [Features](#features)
   * [Agile technique](#agile-technique)
   * [Features left to implement](#features-left-to-implement)
   * [Validator testing](#validator-testing)
   * [Technology Used](#technology-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
+  * [Project visualization](#project-visualiztion)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
@@ -24,6 +26,49 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
   * As a user I can delete the post
   * As a user I can like the post
   * As a user I can comment on the post
+
+# Features
+    *Header:
+            *The navigation bar is present at the top of every page and includes all links to the various other pages.
+            *The My Account navigation link is a drop down menu which includes the Sign up and Log in links.
+            *When the user has logged in, the My Account drop down menu changes to display the user's name and a profile icon.
+            *Users can add post and logout using the links showing on the navbar.
+            [Header](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/header.png)
+            [login](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/login.png)
+    * Sign Up:
+            * Users can register their account by clicking on the sign up button showing
+            on the navbar.
+            [signup](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signup.png)
+    * signin:
+            * Users can signin by clicking on the button showing on the navbar so that they can enjoy the functionalities of the website. Users can only create, edit and delete    the post by registering their account on the website.
+            [signin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signin.png)
+    * Add the post:
+            * Users can create the posts along with uploading images
+            * steps to create the posts are as below
+            * First put the title in the title field for your post.
+            * Put the title tag for your post in the slug field.
+            * You can add the content for your post and style it using the editor showing
+            in the content field.
+            * You can also upload the image using the upload image field for your post.
+            [add post](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/Add%20post.png)
+    * Admin panel:
+            [admin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/admin_panel.png)
+    * Comment
+            * Users can comment on the post.
+            [comment](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/comment.png)
+    * Edit or Update the post:
+            * Users can edit or update the post by clicking on the edit button showing below 
+            the image of the post.
+            [edit or update](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/edit%20post.png)
+    * Delete the post:
+            * Users can delete the post by clicking on the delete button showing below the
+            image of the post.
+            * Users cannot delete the others post.
+            [delete](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/delete%20post.png)
+    * Footer:
+            * Footer displays the social link and purpose of post.
+            [footer](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/footer%20page.png)
+
 
 # Agile technique:
   * Agile technique is used in this project. You can have a look here
@@ -42,9 +87,10 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
      * No errors were returned from [W3C Html](https://validator.w3.org/)
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/css_validator.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
-
+        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/jshint_validation.png)
    * Accessiblity:
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
      in devtools.
@@ -97,6 +143,9 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 - [Git](https://git-scm.com/) 
     - Used for version control to commit to Git and Push to GitHub.
 
+# Project visualization diagram:
+   [Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database_schema.png) 
+
 # Deployment
 
 ## Set up project locally
@@ -130,6 +179,7 @@ To clone the project up locally you can follow the following steps:
 
             os.enviorn["DATABASE_URL"] = "your database url"
             os.environ["SECRET_KEY"] = "Your secret key"
+            os.environ["CLOUDINARY_URL"] = "Your cloudinary url"
             
 
 6. To set up the database migrate the database models by typing the following commands into the terminal: 

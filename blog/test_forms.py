@@ -22,12 +22,6 @@ class TestPostForm(TestCase):
         self.assertIn('author', form.errors.keys())
         self.assertEqual(form.errors['author'][0], 'This field is required.')
 
-    def test_post_category_is_required(self):
-        form = PostForm({'category': ''})
-        self.assertFalse(form.is_valid())
-        self.assertIn('category', form.errors.keys())
-        self.assertEqual(form.errors['category'][0], 'This field is required.')
-
     def test_featured_image_field_is_not_required(self):
         form = PostForm({'name': 'test featured_image'})
         self.assertFalse(form.is_valid())

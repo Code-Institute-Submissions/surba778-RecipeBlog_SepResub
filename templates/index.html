@@ -1,61 +1,73 @@
 {% extends "base.html" %}
-
 {% block content %}
-
 <div class="container-fluid text-center">
-    <div class="row">
-
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-1">
-            <div class="row align-items-center justify-content-center">
-                {% for post in post_list %}
-                <div class="col-md-5">
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="../media/blog1.jpg" alt="default image">
-                                {% else %}
-                                <img class="card-img-top" alt="post image" width="1600" height="900" src=" {{ post.featured_image.url }}">
-                                {% endif %}
-                            </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                
-                            </a>
-                            <hr />
-                            <p class="card-text text-muted h6 bg-color">{{ post.number_of_likes }} <i class="far fa-thumbs-up bg-color"></i>
-                                - {{ post.created_on }}</p>
-                                <p class="author">Author: {{ post.author }}</p><br>
-                                {% if user.is_authenticated %}
-                                    {% if user.id == post.author.id %}
-                                        <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
-                                            <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>
-                                    {% endif %}
-                                {% endif %}
-                        </div>
-                    </div>
-                </div>
-                {% if forloop.counter|divisibleby:1 %}
-            </div>
-            <div class="row align-items-center justify-content-center">
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-12 mt-1">
+      <div class="row align-items-center justify-content-center">
+        {% for post in post_list %}
+        <div class="col-md-5">
+          <div class="card mb-5">
+            <div class="card-body">
+              <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img class="card-img-top"
+                     src="../media/blog1.jpg" alt="default image">
+                {% else %}
+                <img class="card-img-top" alt="post image" width="1600" height="900" src=" {{ post.featured_image.url }}">
                 {% endif %}
-                {% endfor %}
+              </div>
+              <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                <h2 class="card-title">{{ post.title }}
+                </h2>
+              </a>
+              <hr />
+              <p class="card-text text-muted h6 bg-color">{{ post.number_of_likes }} 
+                <i class="far fa-thumbs-up bg-color">
+                </i>
+                - {{ post.created_on }}
+              </p>
+              <p class="author">Author: {{ post.author }}
+              </p>
+              <br>
+              {% if user.is_authenticated %}
+              {% if user.id == post.author.id %}
+              <small>
+                <a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit
+                </a>
+                <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete
+                </a>
+              </small>
+              {% endif %}
+              {% endif %}
             </div>
+          </div>
         </div>
+        {% if forloop.counter|divisibleby:1 %}
+      </div>
+      <div class="row align-items-center justify-content-center">
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
-    {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %}
+  </div>
+  {% if is_paginated %}
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      {% if page_obj.has_previous %}
+      <li>
+        <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV 
+        </a>
+      </li>
+      {% endif %}
+      {% if page_obj.has_next %}
+      <li>
+        <a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
 </div>
 {%endblock%}

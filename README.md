@@ -83,6 +83,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
+        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/pep8.png)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
    * CSS checker:

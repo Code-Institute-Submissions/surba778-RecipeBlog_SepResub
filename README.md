@@ -9,28 +9,47 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 # Table of contents
   * [Users stories](#users-stories)
-  * [Existing Features](#existing-features)
+  * [Agile technique](#agile-technique)
+  * [Features left to implement](#features-left-to-implement)
+  * [Validator testing](#validator-testing)
   * [Technology Used](#technology-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
-  * [Agile Technique](#agile-technique)
-  * [Features left to implement](#features-left-to-implement)
-  * [Testing](#testing)
-  * [Bugs](#bugs)
-  * [Project visualization](#project-visualiztion)
-  * [Colour](#colour)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
 # Users stories:
-  * As a user I can read the blogposts
+  * As a user I can read the post
   * As a user I can create the post
   * As a user I can edit or update the post
   * As a user I can delete the post
   * As a user I can like the post
   * As a user I can comment on the post
 
-https://github.com/surba778/DjangoBlog/issues
+# Agile technique:
+  * Agile technique is used in this project. You can have a look here
+    [Agile](https://github.com/surba778/DjangoBlog/issues)
 
+# Features left to implement
+  * I will add the user profile with image upload option in the future for the users who create 
+  the account and also edit profile option so they can edit the profile.
+
+# Validator Testing
+   I have manually tested this project by doing the following:
+   * Passed the code through a PEP8 linter and confirmed there are no problems
+   * PEP8
+     * No errors were returned from [PEP8 checker](http://pep8online.com/)
+   * Html checker:
+     * No errors were returned from [W3C Html](https://validator.w3.org/)
+   * CSS checker:
+     * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+   * JS checker:
+     * No errors were returned from [JS HINT](https://jshint.com/)
+
+   * Accessiblity:
+     * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
+     in devtools.
+     * Generated report is here below
+  
 # Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)
   * [Css](https://en.wikipedia.org/wiki/CSS)
@@ -77,8 +96,6 @@ https://github.com/surba778/DjangoBlog/issues
     - Used to store the project code after being pushed from Git.
 - [Git](https://git-scm.com/) 
     - Used for version control to commit to Git and Push to GitHub.
-
-<br>
 
 # Deployment
 
@@ -221,7 +238,9 @@ To clone the project up locally you can follow the following steps:
 
 - [Codemy.com](https://codemy.com/) Few codes were also learnt from codemy.
 
-- [Stack Overflow](https://stackoverflow.com/) Few codes were also learnt from stack overflow. 
+- [Stack Overflow](https://stackoverflow.com/) Few codes were also learnt from stack overflow.
+
+- [pexels](https://www.pexels.com/) The best free stock photos.
 
 ## Media
    - Cloudinary is used in this project for images purposes.

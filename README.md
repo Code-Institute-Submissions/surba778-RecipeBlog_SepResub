@@ -23,13 +23,13 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 # Users stories:
   * As a user I can read the blogposts
-  * As a user I can select the category to read that kind of posts
   * As a user I can create the post
-  * As a user I can add the category for the post
   * As a user I can edit or update the post
   * As a user I can delete the post
   * As a user I can like the post
   * As a user I can comment on the post
+
+https://github.com/surba778/DjangoBlog/issues
 
 # Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)

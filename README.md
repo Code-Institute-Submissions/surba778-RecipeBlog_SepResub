@@ -34,15 +34,15 @@ The deployed link can be found here: [Live Site](w/)
             *The My Account navigation link is a drop down menu which includes the Sign up and Log in links.
             *When the user has logged in, the My Account drop down menu changes to display the user's name and a profile icon.
             *Users can add post and logout using the links showing on the navbar.
-            [Header](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/header.png)
-            [login](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/login.png)
+            ![Header](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/header.png)
+            ![login](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/login.png)
     * Sign Up:
             * Users can register their account by clicking on the sign up button showing
             on the navbar.
-            [signup](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signup.png)
+            ![signup](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signup.png)
     * signin:
             * Users can signin by clicking on the button showing on the navbar so that they can enjoy the functionalities of the website. Users can only create, edit and delete    the post by registering their account on the website.
-            [signin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signin.png)
+            ![signin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signin.png)
     * Add the post:
             * Users can create the posts along with uploading images
             * steps to create the posts are as below
@@ -51,28 +51,28 @@ The deployed link can be found here: [Live Site](w/)
             * You can add the content for your post and style it using the editor showing
             in the content field.
             * You can also upload the image using the upload image field for your post.
-            [add post](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/Add%20post.png)
+            ![add post](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/Add%20post.png)
     * Admin panel:
-            [admin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/admin_panel.png)
+            ![admin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/admin_panel.png)
     * Comment
             * Users can comment on the post.
-            [comment](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/comment.png)
+            ![comment](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/comment.png)
     * Edit or Update the post:
             * Users can edit or update the post by clicking on the edit button showing below 
             the image of the post.
-            [edit or update](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/edit%20post.png)
+            ![edit or update](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/edit%20post.png)
     * Delete the post:
             * Users can delete the post by clicking on the delete button showing below the
             image of the post.
             * Users cannot delete the others post.
-            [delete](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/delete%20post.png)
+            ![delete](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/delete%20post.png)
     * Footer:
             * Footer displays the social link and purpose of post.
-            [footer](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/footer%20page.png)
+            ![footer](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/footer%20page.png)
 
 # Agile technique:
   * Agile technique is used in this project. You can have a look here
-    [Agile](https://github.com/surba778/DjangoBlog/issues)
+    ![Agile](https://github.com/surba778/DjangoBlog/issues)
 
 # Features left to implement
   * I will add the user profile with image upload option in the future for the users who create 
@@ -95,20 +95,21 @@ The deployed link can be found here: [Live Site](w/)
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
-        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/pep8.png)
+        ![pep8](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/pep8.png)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
+        ![html checker](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/html%20checker.jpg)
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
-        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/css_validator.png)
+        ![CSS checker](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/css_validator.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
-        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/jshint_validation.png)
+        ![JS hint](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/jshint_validation.png)
    * Accessiblity:
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
      in devtools.
      * Generated report is here below.
-        (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/lighthouse.jpg)
+        ![Accessibility](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/lighthouse.jpg)
   
 # Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)
@@ -158,10 +159,10 @@ The deployed link can be found here: [Live Site](w/)
     - Used for version control to commit to Git and Push to GitHub.
 
 # Project visualization diagram:
-   [Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database_schema.png) 
+   ![Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database_schema.png) 
 
 # Wireframe pic
-    (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/wireframe%20blog.jpg)
+    ![wireframe](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/wireframe%20blog.jpg)
 
 # Deployment
 

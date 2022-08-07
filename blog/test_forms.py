@@ -22,6 +22,12 @@ class TestPostForm(TestCase):
         self.assertIn('author', form.errors.keys())
         self.assertEqual(form.errors['author'][0], 'This field is required.')
 
+    def test_post_content_is_required(self):
+        form = PostForm({'content': ''})
+        self.assertFalse(form.is_valid())
+        self.assertIn('content', form.errors.keys())
+        self.assertEqual(form.errors['content'][0], 'This field is required.')
+
     def test_featured_image_field_is_not_required(self):
         form = PostForm({'name': 'test featured_image'})
         self.assertFalse(form.is_valid())
@@ -29,7 +35,7 @@ class TestPostForm(TestCase):
     def test_fields_are_explicit_in_form_metaclass(self):
         form = PostForm()
         self.assertNotEqual(form.Meta.fields, ['title', 'slug', 'author',
-                            'category', 'content', 'featured_image'])
+                            'content', 'featured_image'])
 
 
 class TestEditForm(TestCase):

@@ -84,12 +84,14 @@ class AddPostView(generic.CreateView):
     model = Post
     form_class = PostForm
     template_name = 'create_post.html'
+    success_url = reverse_lazy('home')
 
 
 class EditPostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
+    success_url = reverse_lazy('home')
 
 
 class DeletePostView(DeleteView):

@@ -20,10 +20,6 @@ class TestViews(TestCase):
         response = self.client.post('/add_post', {'title': 'Test added post'})
         self.assertEqual(response.status_code, 301)
 
-    def test_can_add_category(self):
-        response = self.client.get('/add_category')
-        self.assertEqual(response.status_code, 301)
-
     def test_get_edit_post_page(self):
         response = self.client.get('/edit_post/99')
         self.assertEqual(response.status_code, 404)
@@ -32,6 +28,3 @@ class TestViews(TestCase):
         response = self.client.get('/delete_post')
         self.assertEqual(response.status_code, 301)
 
-    def test_get_category_page(self):
-        response = self.client.get('/category')
-        self.assertEqual(response.status_code, 301)

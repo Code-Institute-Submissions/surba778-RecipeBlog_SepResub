@@ -5,7 +5,7 @@
   add or read the post, edit or update the post, delete the post,
   can like the post and can leave a comment on the post.
 
-The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.com/)
+The deployed link can be found here: [Live Site](w/)
 
 # Table of contents
   * [Users stories](#users-stories)
@@ -16,6 +16,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
   * [Technology Used](#technology-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
   * [Project visualization](#project-visualiztion)
+  * [Wireframe pic](#wireframe-pic)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
@@ -68,7 +69,6 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     * Footer:
             * Footer displays the social link and purpose of post.
             [footer](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/footer%20page.png)
-
 
 # Agile technique:
   * Agile technique is used in this project. You can have a look here
@@ -146,6 +146,9 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 # Project visualization diagram:
    [Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database_schema.png) 
+
+# Wireframe pic
+    (https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/wireframe%20blog.jpg)
 
 # Deployment
 

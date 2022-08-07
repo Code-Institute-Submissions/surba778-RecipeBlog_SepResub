@@ -5,7 +5,7 @@
   add or read the post, edit or update the post, delete the post,
   can like the post and can leave a comment on the post.
 
-The deployed link can be found here: [Live Site](w/)
+The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.com/)
 
 # Table of contents
   * [Users stories](#users-stories)

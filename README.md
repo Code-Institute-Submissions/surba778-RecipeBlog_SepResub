@@ -1,5 +1,5 @@
-# Codestar
-  Codestar is the blogpost website made for the educational purposes.
+
+  Codestar is the recipe blogpost website made for the educational purposes.
   This website is created for the users who love social media. In this blogweb website, there 
   are a lot of functionalities for the users like, users can create the posts with the images, can 
   add or read the post, edit or update the post, delete the post,
@@ -72,7 +72,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 # Agile technique:
   * Agile technique is used in this project. You can have a look here
-    ![Agile](https://github.com/surba778/DjangoBlog/issues)
+    [Agile](https://github.com/surba778/DjangoBlog/issues)
 
 # Features left to implement
   * I will add the user profile with image upload option in the future for the users who create 
@@ -195,7 +195,7 @@ To clone the project up locally you can follow the following steps:
         - ```
             import os
 
-            os.enviorn["DATABASE_URL"] = "your database url"
+            os.environ["DATABASE_URL"] = "your database url"
             os.environ["SECRET_KEY"] = "Your secret key"
             os.environ["CLOUDINARY_URL"] = "Your cloudinary url"
             

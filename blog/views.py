@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import UpdateView, DeleteView
+from django.views.generic import UpdateView, DeleteView, CreateView
 from django.http import HttpResponseRedirect
 from .models import Post
 from django.urls import reverse_lazy
@@ -81,11 +81,15 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPostView(generic.CreateView):
+class AddPostView(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'create_post.html'
     success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
 
 class EditPostView(UpdateView):

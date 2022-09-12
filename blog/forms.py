@@ -12,7 +12,7 @@ class CommentForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'author',
+        fields = ('title', 'slug',
                   'content', 'featured_image',)
 
         widgets = {
@@ -21,9 +21,6 @@ class PostForm(forms.ModelForm):
             'slug': forms.TextInput
             (attrs={'class': 'form-control',
                     'placeholder': 'Title tag Placeholder Area'}),
-            'author': forms.TextInput(attrs={'class': 'form-control',
-                                             'value': '', 'id': 'elder',
-                                             'type': 'hidden'}),
             'content': SummernoteWidget(),
 
         }

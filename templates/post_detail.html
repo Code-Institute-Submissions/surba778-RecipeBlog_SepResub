@@ -11,11 +11,9 @@
         </p>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
-        {% if "placeholder" in post.featured_image.url %}
-        <img src="../DJANGOBLOG/media/blog2.jpg" width="100%">
-        {% else %}
+        
         <img src=" {{ post.featured_image.url }}" width="100%">
-        {% endif %}
+        
       </div>
     </div>
   </div>

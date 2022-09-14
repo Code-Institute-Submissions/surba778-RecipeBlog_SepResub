@@ -299,10 +299,13 @@ To clone the project up locally you can follow the following steps:
 # Credits
 
 ## Code
+- [Simple Django Blog](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi): Many thanks to John Elder's 'Create A Simple Blog With Python
+and Django' project - a great reference, inspiration and example.
 
 - [Code Institute](https://codeinstitute.net/): for git template IDE and heroku deployment instructions. The Idea of README.md file and the codes used for the website were also learnt from Code Institute.
 
-- [Django course](https://www.youtube.com/watch?v=PtQiiknWUcI): This youtube walkthrough help me to learn about Django.
+- [Code Institute](https://github.com/Code-Institute-Solutions/Django3blog): Many thanks to Matt Rudge and CI's 'I Think Therefore I Blog'
+Walkthrough project - a great reference, inspiration and example.
 
 - [Codemy.com](https://codemy.com/) Few codes were also learnt from codemy.
 

@@ -1,6 +1,6 @@
 
   Codestar is the recipe blogpost website made for the educational purposes.
-  This website is created for the users who love social media. In this blogweb website, there 
+  This website is created for the users who love good recipes. In this recipeblog website, there 
   are a lot of functionalities for the users like, users can create the posts with the images, can 
   add or read the post, edit or update the post, delete the post,
   can like the post and can leave a comment on the post.
@@ -35,7 +35,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
             *When the user has logged in, the My Account drop down menu changes to display the user's name and a profile icon.
             *Users can add post and logout using the links showing on the navbar.
             ![Header](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/header.png)
-            ![login](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/login.png)
+        
     * Sign Up:
             * Users can register their account by clicking on the sign up button showing
             on the navbar.
@@ -159,7 +159,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     - Used for version control to commit to Git and Push to GitHub.
 
 # Project visualization diagram:
-   ![Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database_schema.png) 
+   ![Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database.png) 
 
 # Wireframe pic
     ![wireframe](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/wireframe%20blog.jpg)

@@ -4,7 +4,7 @@ from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
 from django.urls import reverse_lazy
-from .forms import CommentForm, PostForm, EditForm
+from .forms import CommentForm
 
 
 class PostList(generic.ListView):
@@ -82,8 +82,8 @@ class PostLike(View):
 
 class AddPostView(generic.CreateView):
     model = Post
-    form_class = PostForm
     template_name = 'create_post.html'
+    fields = ('title', 'slug', 'content', 'featured_image',)
     success_url = reverse_lazy('home')
 
     def form_valid(self, form):
@@ -93,8 +93,8 @@ class AddPostView(generic.CreateView):
 
 class UpdatePostView(UpdateView):
     model = Post
-    form_class = EditForm
     template_name = 'update_post.html'
+    fields = ('title', 'slug', 'content', 'featured_image',)
     success_url = reverse_lazy('home')
 
 

@@ -36,9 +36,9 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     * Users can register their account by clicking on the sign up button showing
     on the navbar.
     ![signup](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/signup.png)
-* Signin:
+* Login:
     * Users can signin by clicking on the button showing on the navbar so that they can enjoy the functionalities of the website. Users can only create, edit and delete the post by registering their account on the website.
-    ![signin](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/signin.png)
+    ![login](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/signin.png)
 * Add the post:
     * If the user is logged in as an admin, they are able to add a blog post both from the front and backend just simply by clicking on the "Add post" navigation link.
     * Users can create the posts along with uploading images.
@@ -79,7 +79,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     ![wireframe](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/wireframe%20blog.jpg)
 
 * Models Diagram
-    ![Models Diagram](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/Model diagram.jpg)
+    ![Models Diagram](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/Model%20diagram.jpg)
 
 * Features left to implement
     * I will add the user profile with image upload option in the future for the users who create 

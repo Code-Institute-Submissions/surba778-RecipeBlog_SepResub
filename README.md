@@ -88,18 +88,18 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 ## Testing
 
 ### User story testing
-    * As a site user i can register an account so that i can add/edit/delete my post and comment on the post and also add the post.
-    * A sign up button is immediately visible on the landing page as a call to action for the user to sign up to get started. When the user clicks the button they are taken to the sign up page.
-    * Once the user has registered an account they can perform all the actions.
-    * As a Site User, I can login or logout of my account so that I can keep my account secure. If the user has registered an account they can access the login and logout buttons in the Navbar. As a Site User I can see my login status so that I know if I'm logged in or out.
+* As a site user i can register an account so that i can add/edit/delete my post and comment on the post and also add the post.
+* A sign up button is immediately visible on the landing page as a call to action for the user to sign up to get started. When the user clicks the button they are taken to the sign up page.
+* Once the user has registered an account they can perform all the actions.
+* As a Site User, I can login or logout of my account so that I can keep my account secure. If the user has registered an account they can access the login and logout buttons in the Navbar. As a Site User I can see my login status so that I know if I'm logged in or out.
 
 ### User Navigation
-    * As a User I can immediately understand the purpose of the site.
-    * As a Site User, I can view a paginated list of posts so that I can select a post to view. Also if a user click on a post then user can read the full comment and post.
-    * As a Site User, I can view my posts so that I can see and manage all posts.
+* As a User I can immediately understand the purpose of the site.
+* As a Site User, I can view a paginated list of posts so that I can select a post to view. Also if a user click on a post then user can read the full comment and post.
+* As a Site User, I can view my posts so that I can see and manage all posts.
 
 ### Browser testing
-    * The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
+* The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
 
 ### Validator Testing
    I have manually tested this project by doing the following:

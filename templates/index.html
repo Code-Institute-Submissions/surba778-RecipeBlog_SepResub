@@ -30,9 +30,15 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
-                                
+                              {% if "placeholder" in post.featured_image.url %}
+                              <img class="card-img-top"
+                                  src="https://i.ibb.co/gVx59QK/ocean-ng-L0x-Ot-Anv94-Y-unsplash.jpg"
+                                  alt="Image of a wall clock">
+                              <!-- otherwise use uploaded img -->
+                              {% else %}
+                              <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                              alt="Post featured image">
+                              {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>

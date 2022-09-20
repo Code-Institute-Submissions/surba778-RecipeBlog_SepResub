@@ -121,8 +121,8 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
         in devtools. Google's Lighthouse was used to measure the quality of the pages.
      * Generated report is here below.
         ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse.jpg)
-        ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse in iphone mode.png)
-        ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse test in ipad mini mode.png)
+        ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20in%20iphone%20mode.png)
+        ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20test%20in%20ipad%20mini%20mode.png)
   
 ## Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)

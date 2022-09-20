@@ -10,13 +10,9 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 ## Table of contents
   * [Users stories](#users-stories)
   * [Features](#features)
-  * [Agile technique](#agile-technique)
-  * [Features left to implement](#features-left-to-implement)
-  * [Validator testing](#validator-testing)
+  * [Testing](#testing)
   * [Technology Used](#technology-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
-  * [Project visualization](#project-visualiztion)
-  * [Wireframe pic](#wireframe-pic)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
@@ -71,15 +67,19 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     * Footer displays the social link and purpose of post.
     ![footer](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/footer%20page.png)
 
+* Error page
+    * Custom error page were created to give the user more information on the error and to guide them back to the site.
+    ![404 page not found](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/404.jpg)
+
 * Agile technique:
     * Agile technique is used in this project. You can have a look here
     ![Agile](https://github.com/surba778/RecipeBlog/issues)
 
-* Project visualization diagram:
-    ![Visualization](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/database.png) 
-
 * Wireframe pic
     ![wireframe](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/wireframe%20blog.jpg)
+
+* Models Diagram
+    ![Models Diagram](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/Model diagram.jpg)
 
 * Features left to implement
     * I will add the user profile with image upload option in the future for the users who create 
@@ -87,11 +87,19 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 ## Testing
 
+- Manual testing:
+    - All links, form submissions, admin privileges, user privileges, app functions were tested out and work as intended.
 ### User story testing
-* As a site user i can register an account so that i can add/edit/delete my post and comment on the post and also add the post.
+* As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end. 
+The site admin is able to perform all CRUD functionalities from either the Django admin panel, or if they prefer, from the front-end as well. Once a superuser is logged in they are able to See an "Add Post" page in the navigation bar, once they click on this, they are greeted with a form to add a post. If they click on any blog post they will see two links at the blog post header, "Edit" & "Delete".
 * A sign up button is immediately visible on the landing page as a call to action for the user to sign up to get started. When the user clicks the button they are taken to the sign up page.
 * Once the user has registered an account they can perform all the actions.
 * As a Site User, I can login or logout of my account so that I can keep my account secure. If the user has registered an account they can access the login and logout buttons in the Navbar. As a Site User I can see my login status so that I know if I'm logged in or out.
+* As a Site User / Admin I can view the number of likes on each post.
+* All the posts display a heart icon with a number next to it (which indicate how many times the post has been liked).
+* As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+* As a Site User I can like or unlike a post so that I can interact with the content.
 
 ### User Navigation
 * As a User I can immediately understand the purpose of the site.
@@ -120,9 +128,25 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
      *  I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
         in devtools. Google's Lighthouse was used to measure the quality of the pages.
      * Generated report is here below.
-        ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse.jpg)
+        ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/responsivetest.png)
         ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20in%20iphone%20mode.png)
         ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20test%20in%20ipad%20mini%20mode.png)
+
+### Device Testing
+
+    - Recipe Blog website was tested on several devices/environments (without any issues), including:
+        - MacBook Air 13.3" M1 2020 (macOS Monterey 12.3.1)
+        - iPad mini
+        - iPhone SE
+        - Google Pixel 6 (Android 12)
+
+### Browser Testing
+
+    - Recipe website was tested on several browsers (without any issues - across different devices), including:
+        - Google Chrome (100.0.4896.127) (arm64)
+        - Mozilla Firefox (99.0.1 (64-bit))
+        - Safari (Version 15.4 (17613.1.17.1.13))
+
   
 ## Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)
@@ -227,7 +251,7 @@ To clone the project up locally you can follow the following steps:
         ```
 
 
-## Deploy to Heroku
+### Deploy to Heroku
 
 1. Create a Heroku app: 
     - Go to [Heroku](https://www.heroku.com/) and create an account if you do not have one yet. 
@@ -272,7 +296,7 @@ To clone the project up locally you can follow the following steps:
         ```
 9. Type the following into the procfile: 
     - ```
-        web: gunicorn restaurant.wsgi
+        web: gunicorn codestar.wsgi
         ```
 10. Log in into the Heroku terminal:
     - ```
@@ -304,10 +328,29 @@ To clone the project up locally you can follow the following steps:
         DEBUG = 'DEVELOPMENT' in os.environ
         ```
 
+### Forking the Repository
 
-# Credits
+    By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository.
 
-## Code
+    To achieve that simply:
+
+    - Log into GitHub.
+    - Locate the GitHub Repository in question.
+    - At the top of the repository, on the right side of the page, select "Fork"
+    - You should now have a copy of the original repository in your GitHub account.
+
+### Creating a Clone
+
+    How to run this project locally:
+
+    - Install the GitPod Browser Extension for Google Chrome.
+    - Log into GitHub.
+    - Locate the GitHub Repository you'd like to clone in question.
+    - Click the green "GitPod" button in the top right corner of the repository. This will create a new GitPod.
+
+## Credits
+
+### Code
 - [Simple Django Blog](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi): Many thanks to John Elder's 'Create A Simple Blog With Python
 and Django' project - a great reference, inspiration and example.
 
@@ -322,9 +365,9 @@ Walkthrough project - a great reference, inspiration and example.
 
 - [pexels](https://www.pexels.com/) The best free stock photos.
 
-## Media
+### Media
    - Cloudinary is used in this project for images purposes.
 
-## Acknowledgement
+### Acknowledgement
 - Mentors help and advice
 - Tutors help

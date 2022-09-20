@@ -1,5 +1,5 @@
-
-  Codestar is the recipe blogpost website made for the educational purposes.
+# Recipes Blog
+  Codestar is a recipes blog website made for the educational purposes.
   This website is created for the users who love good recipes. In this recipeblog website, there 
   are a lot of functionalities for the users like, users can create the posts with the images, can 
   add or read the post, edit or update the post, delete the post,
@@ -7,7 +7,7 @@
 
 The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.com/)
 
-# Table of contents
+## Table of contents
   * [Users stories](#users-stories)
   * [Features](#features)
   * [Agile technique](#agile-technique)
@@ -20,98 +20,111 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
   * [Deployment](#deployment)
   * [Credits](#credits)
 
-# Users stories:
-  * As a user I can read the post
-  * As a user I can create the post
-  * As a user I can edit or update the post
-  * As a user I can delete the post
-  * As a user I can like the post
-  * As a user I can comment on the post
+## Users stories:
+  * As a user I can read the list of posts and then i can easily select anyone to view the post.
+  * As a user/Admin I can view the number of likes on each post.
+  * As a site Admin I can create, read, update and delete posts so that i can manage my blog content both from the front and back-end.
+  * As a user/Admin i can view comments on a post.
+  * As a user I can signup an account so that i can comment and like.
+  * As a user I can like on the posts.
+  * As a site user i can click on a post so that i can read the full content.
+  * As a site Admin i can approve comments.
 
-# Features
-    *Header:
-            *The navigation bar is present at the top of every page and includes all links to the various other pages.
-            *The My Account navigation link is a drop down menu which includes the Sign up and Log in links.
-            *When the user has logged in, the My Account drop down menu changes to display the user's name and a profile icon.
-            *Users can add post and logout using the links showing on the navbar.
-            ![Header](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/header.png)
-        
-    * Sign Up:
-            * Users can register their account by clicking on the sign up button showing
-            on the navbar.
-            ![signup](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signup.png)
-    * signin:
-            * Users can signin by clicking on the button showing on the navbar so that they can enjoy the functionalities of the website. Users can only create, edit and delete    the post by registering their account on the website.
-            ![signin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/signin.png)
-    * Add the post:
-            * Users can create the posts along with uploading images
-            * steps to create the posts are as below
-            * First put the title in the title field for your post.
-            * Put the title tag for your post in the slug field.
-            * You can add the content for your post and style it using the editor showing
-            in the content field.
-            * You can also upload the image using the upload image field for your post.
-            ![add post](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/Add%20post.png)
-    * Admin panel:
-            ![admin](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/admin_panel.png)
-    * Comment
-            * Users can comment on the post.
-            ![comment](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/comment.png)
-    * Edit or Update the post:
-            * Users can edit or update the post by clicking on the edit button showing below 
-            the image of the post.
-            ![edit or update](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/edit%20post.png)
-    * Delete the post:
-            * Users can delete the post by clicking on the delete button showing below the
-            image of the post.
-            * Users cannot delete the others post.
-            ![delete](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/delete%20post.png)
-    * Footer:
-            * Footer displays the social link and purpose of post.
-            ![footer](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/footer%20page.png)
+## Features
 
-# Agile technique:
-  * Agile technique is used in this project. You can have a look here
-    [Agile](https://github.com/surba778/DjangoBlog/issues)
+* Header:
+    *The navigation bar is present at the top of every page and includes all links to the various other pages.
+    *Users can add post and logout using the links showing on the navbar.
+    ![Header](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/header.png)   
+* Sign Up:
+    * Users can register their account by clicking on the sign up button showing
+    on the navbar.
+    ![signup](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/signup.png)
+* Signin:
+    * Users can signin by clicking on the button showing on the navbar so that they can enjoy the functionalities of the website. Users can only create, edit and delete the post by registering their account on the website.
+    ![signin](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/signin.png)
+* Add the post:
+    * If the user is logged in as an admin, they are able to add a blog post both from the front and backend just simply by clicking on the "Add post" navigation link.
+    * Users can create the posts along with uploading images.
+    * The Blog posts section displays six posts at a time.
+    * steps to create the posts are as below
+    * First put the title in the title field for your post.
+    * Put the title tag for your post in the slug field.
+    * You can add the content for your post and style it using the editor showing in the content field.
+    * You can also upload the image using the upload image field for your post.
+    ![add post](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/Add%20post.png)
+* Admin panel:
+    ![admin](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/admin_panel.png)
+* Comment
+    * Users can comment on the post. The comment section features information displayed from all users who have posted comments, such as username, the date of the comment and the comment's content. It also features a text field to the right, where users who are logged in are able to engage with each other/post and submit a comment.
+    ![comment](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/comment.png)
+* Update the post:
+    * Users can update the post by clicking on the update button showing below 
+    the image of the post.
+    * If the user is logged in as an admin, they are able to update any of the Blog posts both from the front and backend simply by clicking on the "update" link at the blog post's header.
+    ![update](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/edit%20post.png)
+* Delete the post:
+    * If the user is logged in as an admin, they are able to delete any of the Blog posts both from the front and backend simply by clicking on the "delete" link at the blog post's header.
+    * Users can delete the post by clicking on the delete button showing below the image of the post.
+    ![delete](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/delete%20post.png)
+* Footer:
+    * Footer displays the social link and purpose of post.
+    ![footer](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/footer%20page.png)
 
-# Features left to implement
-  * I will add the user profile with image upload option in the future for the users who create 
-  the account and also edit profile option so they can edit the profile.
+* Agile technique:
+    * Agile technique is used in this project. You can have a look here
+    ![Agile](https://github.com/surba778/RecipeBlog/issues)
 
-# Testing
-    ## User story testing
-        * As a site user i can register an account so that i can add/edit/delete my post and comment on the post and also add the post.
-        * A sign up button is immediately visible on the landing page as a call to action for the user to sign up to get started. When the user clicks the button they are taken to the sign up page.
-        * Once the user has registered an account they can perform all the actions.
-        * As a Site User, I can login or logout of my account so that I can keep my account secure. If the user has registered an account they can access the login and logout buttons in the Navbar. As a Site User I can see my login status so that I know if I'm logged in or out.
-    ## User Navigation
-        * As a User I can immediately understand the purpose of the site.
-        * As a Site User, I can view a paginated list of posts so that I can select a post to view. Also if a user click on a post then user can read the full comment and post.
-        * As a Site User, I can view my posts so that I can see and manage all posts. 
-    ## Browser testing
-        * The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
-# Validator Testing
+* Project visualization diagram:
+    ![Visualization](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/database.png) 
+
+* Wireframe pic
+    ![wireframe](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/wireframe%20blog.jpg)
+
+* Features left to implement
+    * I will add the user profile with image upload option in the future for the users who create 
+    the account and also edit profile option so they can edit the profile.
+
+## Testing
+
+### User story testing
+    * As a site user i can register an account so that i can add/edit/delete my post and comment on the post and also add the post.
+    * A sign up button is immediately visible on the landing page as a call to action for the user to sign up to get started. When the user clicks the button they are taken to the sign up page.
+    * Once the user has registered an account they can perform all the actions.
+    * As a Site User, I can login or logout of my account so that I can keep my account secure. If the user has registered an account they can access the login and logout buttons in the Navbar. As a Site User I can see my login status so that I know if I'm logged in or out.
+
+### User Navigation
+    * As a User I can immediately understand the purpose of the site.
+    * As a Site User, I can view a paginated list of posts so that I can select a post to view. Also if a user click on a post then user can read the full comment and post.
+    * As a Site User, I can view my posts so that I can see and manage all posts.
+
+### Browser testing
+    * The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
+
+### Validator Testing
    I have manually tested this project by doing the following:
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
-        ![pep8](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/pep8.png)
+        ![pep8](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/pep8.png)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
-        ![html checker](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/html%20checker.jpg)
+        ![html checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/html%20checker.jpg)
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
-        ![CSS checker](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/css_validator.png)
+        ![CSS checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/css_validator.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
-        ![JS hint](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/jshint_validation.png)
+        ![JS hint](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/jshint_validation.png)
    * Accessiblity:
-     * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
-     in devtools.
+     *  I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
+        in devtools. Google's Lighthouse was used to measure the quality of the pages.
      * Generated report is here below.
-        ![Accessibility](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/lighthouse.jpg)
+        ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse.jpg)
+        ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse in iphone mode.png)
+        ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse test in ipad mini mode.png)
   
-# Technology Used 
+## Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)
   * [Css](https://en.wikipedia.org/wiki/CSS)
   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
@@ -122,7 +135,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
   * [Gitpod](https://www.gitpod.io)
   * [Heroku](https://en.wikipedia.org/wiki/Heroku)
 
-# Libraries & Integrations
+## Libraries & Integrations
 - [Django](https://www.djangoproject.com/)
     - Used as the primary framework to build the project.
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
@@ -133,14 +146,12 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     - Used to populate the countries select field on the order form and profile form.
 - [Coverage](https://pypi.org/project/coverage/)
     - Used to produce a testing report.
-- [Stripe](https://stripe.com/gb)
-    - Used to handle payments.
+- [Cloudinary](https://cloudinary.com/)
+  - Cloudinary was used to store the project's images.
 - [Bootstrap](https://getbootstrap.com/)
     - Used as a framework for styling and to make the site responsive via grid system.
-- [Amazon Web Services](https://aws.amazon.com/)
-    - Used to store static files and images.
-- [SQLite](https://www.sqlite.org/index.html)
-    - Database used in development.
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
 - [PostgreSQL](https://www.postgresql.org/)
     - Database used in production.
 - [Heroku](https://id.heroku.com/login)
@@ -157,16 +168,14 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
     - Used to store the project code after being pushed from Git.
 - [Git](https://git-scm.com/) 
     - Used for version control to commit to Git and Push to GitHub.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the game.
+- [Summernote](https://summernote.org/)
+  - Summernote WYSIWYG for Bootstrap.
 
-# Project visualization diagram:
-   ![Visualization](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/database.png) 
+## Deployment
 
-# Wireframe pic
-    ![wireframe](https://github.com/surba778/DjangoBlog/blob/main/docs/readme_images/features/wireframe%20blog.jpg)
-
-# Deployment
-
-## Set up project locally
+### Set up project locally
 
 First, ensure the following are set up on your IDE:
 - [PIP3](https://pypi.org/project/pip/) Python package installer. 
@@ -175,13 +184,13 @@ First, ensure the following are set up on your IDE:
 
 To clone the project up locally you can follow the following steps: 
 
-1. Navigate to the repository - [Repository](https://github.com/surba778/DjangoBlog)
+1. Navigate to the repository - [Repository](https://github.com/surba778/RecipeBlog)
 
 2. Click the code dropdown button and copy the url. 
 
 3. Open the terminal in your IDE and enter the following code: 
     - ```
-        git clone https://github.com/surba778/DjangoBlog.git
+        git clone https://github.com/surba778/RecipeBlog.git
         ```
 
 4. Install the dependencies needed to run the application by typing the following command into the terminal: 

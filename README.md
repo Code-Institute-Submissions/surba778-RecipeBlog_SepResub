@@ -29,8 +29,8 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 ## Features
 
 * Header:
-    *The navigation bar is present at the top of every page and includes all links to the various other pages.
-    *Users can add post and logout using the links showing on the navbar.
+    * The navigation bar is present at the top of every page and includes all links to the various other pages.
+    * Users can add post and logout using the links showing on the navbar.
     ![Header](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/header.png)   
 * Sign Up:
     * Users can register their account by clicking on the sign up button showing
@@ -73,7 +73,7 @@ The deployed link can be found here: [Live Site](https://sureshblog.herokuapp.co
 
 * Agile technique:
     * Agile technique is used in this project. You can have a look here
-    ![Agile](https://github.com/surba778/RecipeBlog/issues)
+    [Agile](https://github.com/surba778/RecipeBlog/issues)
 
 * Wireframe pic
     ![wireframe](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/wireframe%20blog.jpg)
@@ -140,20 +140,10 @@ The site admin is able to perform all CRUD functionalities from either the Djang
         ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/lighthouse%20test%20in%20ipad%20mini%20mode.png)
 
 ### Device Testing
-
-    - Recipe Blog website was tested on several devices/environments (without any issues), including:
-        - MacBook Air 13.3" M1 2020 (macOS Monterey 12.3.1)
-        - iPad mini
-        - iPhone SE
-        - Google Pixel 6 (Android 12)
+* Recipe Blog website was tested on several devices/environments (without any issues), including: MacBook Air 13.3" M1 2020 (macOS Monterey 12.3.1), ipad mini, iphone SE.
 
 ### Browser Testing
-
-    - Recipe website was tested on several browsers (without any issues - across different devices), including:
-        - Google Chrome (100.0.4896.127) (arm64)
-        - Mozilla Firefox (99.0.1 (64-bit))
-        - Safari (Version 15.4 (17613.1.17.1.13))
-
+* Recipe website was tested on several browsers (without any issues - across different devices), including: Google Chrome, Mozilla Firefox, Safari.
   
 ## Technology Used 
   * [Html](https://en.wikipedia.org/wiki/HTML)
@@ -334,26 +324,6 @@ To clone the project up locally you can follow the following steps:
     - ```
         DEBUG = 'DEVELOPMENT' in os.environ
         ```
-
-### Forking the Repository
-
-    By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository.
-
-    To achieve that simply:
-
-    - Log into GitHub.
-    - Locate the GitHub Repository in question.
-    - At the top of the repository, on the right side of the page, select "Fork"
-    - You should now have a copy of the original repository in your GitHub account.
-
-### Creating a Clone
-
-    How to run this project locally:
-
-    - Install the GitPod Browser Extension for Google Chrome.
-    - Log into GitHub.
-    - Locate the GitHub Repository you'd like to clone in question.
-    - Click the green "GitPod" button in the top right corner of the repository. This will create a new GitPod.
 
 ## Credits
 

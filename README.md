@@ -108,36 +108,36 @@ The site admin is able to perform all CRUD functionalities from either the Djang
 
 ### Browser testing
 * The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
-    ![Browser testing]
+    ![Browser testing](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/Browser%20testing.jpg)
 
 ### Responsiveness 
 * The game is tested on the following devices: 
     - Desktop: 1024px, 1366px, 1440px, 1600px and 1680px.
     - Mobile & Tablet: Galaxy S5, iPhone SE, iPhone 6/7/8, iPad and iPad Pro.
-    ![total responsiveness report]
+    ![total responsiveness report](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/total-responsive-report.jpg)
 
 ### Validator Testing
    I have manually tested this project by doing the following:
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
-        ![pep8](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/pep8.png)
+        ![pep8](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/pep8.png)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
-        ![html checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/html%20checker.jpg)
+        ![html checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/html%20checker.jpg)
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
-        ![CSS checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/css_validator.png)
+        ![CSS checker](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/css_validator.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
-        ![JS hint](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/jshint_validation.png)
+        ![JS hint](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/jshint_validation.png)
    * Accessiblity:
      *  I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
         in devtools. Google's Lighthouse was used to measure the quality of the pages.
      * Generated report is here below.
-        ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/responsivetest.png)
-        ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20in%20iphone%20mode.png)
-        ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/features/lighthouse%20test%20in%20ipad%20mini%20mode.png)
+        ![Accessibility](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/responsivetest.png)
+        ![Lighthouse report in iphone mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/lighthouse%20in%20iphone%20mode.png)
+        ![Lighthouse report in ipad mini mode](https://github.com/surba778/RecipeBlog/blob/main/media/images/readme_images/testing/lighthouse%20test%20in%20ipad%20mini%20mode.png)
 
 ### Device Testing
 

@@ -108,6 +108,13 @@ The site admin is able to perform all CRUD functionalities from either the Djang
 
 ### Browser testing
 * The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
+    ![Browser testing]
+
+### Responsiveness 
+* The game is tested on the following devices: 
+    - Desktop: 1024px, 1366px, 1440px, 1600px and 1680px.
+    - Mobile & Tablet: Galaxy S5, iPhone SE, iPhone 6/7/8, iPad and iPad Pro.
+    ![total responsiveness report]
 
 ### Validator Testing
    I have manually tested this project by doing the following:
